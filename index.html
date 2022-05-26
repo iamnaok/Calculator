@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>HTML Calculator</h1>
+        <div id="calc-parent">
+        <div class="row">
+        <div class="column" id="calc-display-val">0</div>
+        </div>
+
+        <div class="row">
+        <div class="calc-btn column" id="calc-clear" onclick="pressAC()">AC</div>
+        <div class="calc-btn column" id="calc-backspace" onclick="pressBackspace()">&#8676;</div>
+        <div class="calc-btn calc-btn-operator column" id="calc-divide" onclick="pressDivide()">&#247;</div> 
+        </div>
+
+        <div class="row">
+            <div class="calc-btn calc-btn-num column" id="calc-seven" onclick="pressSeven()">7</div> 
+            <div class="calc-btn calc-btn-num column" id="calc-eight" onclick="pressEight()">8</div> 
+            <div class="calc-btn calc-btn-num column" id="calc-nine" onclick="pressNine()">9</div> 
+            <div class="calc-btn calc-btn-operator column" id="calc-multiply" onclick="pressMultiply()">x</div> 
+        </div>
+
+        <div class="row">
+            <div class="calc-btn calc-btn-num column" id="calc-four" onclick="pressFour()">4</div> 
+            <div class="calc-btn calc-btn-num column" id="calc-five" onclick="pressFive()">5</div> 
+            <div class="calc-btn calc-btn-num column" id="calc-six" onclick="pressSix()">6</div> 
+            <div class="calc-btn calc-btn-operator column" id="calc-minus" onclick="pressMinus()">-</div> 
+        </div>
+
+        <div class="row">
+            <div class="calc-btn calc-btn-num column" id="calc-one" onclick="pressOne()">1</div> 
+            <div class="calc-btn calc-btn-num column" id="calc-two" onclick="pressTwo()">2</div> 
+            <div class="calc-btn calc-btn-num column" id="calc-three" onclick="pressThree()">3</div> 
+            <div class="calc-btn calc-btn-operator column" id="calc-plus" onclick="pressPlus()">+</div> 
+            </div>
+
+            <div class="row">
+                <div class="calc-btn calc-btn-num column" id="calc-zero" onclick="pressZero()">0</div> 
+                <div class="calc-btn column" id="calc-decimal" onclick="pressDecimal()">.</div> 
+                <div class="calc-btn calc-btn-operator column" id="calc-equals" onclick="pressEquals()">=</div> 
+                </div> 
+        </div>
+<!--Above is closing tag for calc-parent div-->
+
+    <script src="script.js"></script>  
+
+</body>
+</html>
